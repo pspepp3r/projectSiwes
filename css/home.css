@@ -1,0 +1,15 @@
+@import url('main.css');
+
+#a-uname {
+    font-size: larger;
+}
+
+.result {
+    display: flex;
+}
+
+header {
+    display: flex;
+    gap: 12em;
+    justify-content: space-between;
+}

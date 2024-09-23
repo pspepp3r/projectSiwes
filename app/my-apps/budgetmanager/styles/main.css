@@ -1,0 +1,118 @@
+@import url("../../../../img/fontawesome-free-5.15.4-web/css/all.css");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--theme-color1: #e9e9ed;
+	--theme-color2: rgb(201, 201, 201);
+}
+
+.dpic {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+
+.wrapper {
+	background-color: var(--theme-color2);
+	/* background-color: rgb(201, 201, 201); */
+	border: 1px solid var(--theme-color2);
+	border-radius: 12px;
+	margin: 2em auto;
+	padding: 1em;
+	width: 85%;
+}
+
+#my-name {
+	transform: translateY(-7px);
+}
+
+a {
+	color: var(--theme-color1);
+	text-decoration: dashed;
+}
+
+a.btn:hover {
+	background-color: var(--theme-color1);
+}
+
+a.btn {
+	color: black;
+	background-color: white;
+	border: 1px solid var(--theme-color2);
+	border-radius: 12px;
+	cursor: pointer;
+	height: 2.5em;
+	margin: 0.1em;
+	outline: none;
+	padding: 0.5em;
+	transition-duration: 0.5s;
+}
+
+a:hover {
+	color: grey;
+}
+
+body {
+	background-color: var(--theme-color1);
+	font-family: "Comic Sans MS";
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	background-color: white;
+	border: 1px solid var(--theme-color2);
+	border-radius: 12px;
+	cursor: pointer;
+	height: 2.5em;
+	margin: 0.2em auto;
+	outline: none;
+	padding: 0.5em;
+	transition-duration: 0.5s;
+	width: 5em;
+}
+
+button:hover {
+	background-color: var(--theme-color1);
+}
+
+h1 {
+	font-family: "Trebuchet MS";
+}
+
+i {
+	color: var(--theme-color2);
+	cursor: pointer;
+}
+
+img {
+	cursor: pointer;
+}
+
+input {
+	border: 1px solid white;
+	border-radius: 5px;
+	height: 2.5em;
+	margin: 0.4em auto;
+	outline: none;
+	padding: 0.5em;
+	transition-duration: 1s;
+}
+
+li {
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: bolder;
+	list-style-type: none;
+	padding: 0.1em;
+	width: 100%;
+}
+
+small{
+    text-align: center;
+}

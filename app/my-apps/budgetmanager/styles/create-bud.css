@@ -1,0 +1,93 @@
+@import url("main.css");
+
+@keyframes fly-in {
+	0% {
+		top: 0em;
+	}
+
+	100% {
+		top: 11em;
+	}
+}
+
+.backdrop {
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 110%;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 9;
+}
+
+.budget,
+.expense {
+	margin: 20px 0;
+	padding: 0 15px;
+}
+
+.container {
+	border-radius: 5px;
+	margin: 20px auto;
+	width: 90%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 0;
+	padding: 10px 10px 0 10px;
+}
+
+.header h2 {
+	margin-bottom: 0;
+}
+
+.modal {
+	animation-name: fly-in;
+	animation-duration: 0.5s;
+	border-radius: 12px;
+	background-color: var(--theme-color2);
+	padding: 2em;
+	padding-top: 4em;
+	position: absolute;
+	right: 20em;
+	top: 10em;
+	width: 20em;
+	z-index: 10;
+}
+
+.results {
+	display: flex;
+	padding: 10px;
+}
+
+.results p {
+	margin: 0 auto;
+	width: 30%;
+}
+
+#content-x {
+	margin-bottom: 30px;
+}
+
+#log {
+	border-radius: 5px;
+	margin: 20px auto;
+	padding-bottom: 10px;
+	width: 90%;
+}
+
+#log .header {
+	border-bottom: 1px solid #f4feff;
+	display: flex;
+}
+
+#log .header h3 {
+	margin: 0 auto;
+	width: 30%;
+}
+
+p#remark {
+	display: none;
+	margin-left: 10px;
+}

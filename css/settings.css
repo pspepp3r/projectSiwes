@@ -1,0 +1,33 @@
+@import url('main.css');
+
+#a-uname {
+    font-size: larger;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    /* gap: 12em; */
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 100%;
+}
+
+p{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        display: block;
+    }
+    p{
+        text-align: left;
+    }
+}
