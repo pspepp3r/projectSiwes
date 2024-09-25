@@ -9,7 +9,7 @@ if (isset($_SESSION["user_id"])) {
   $username = $user['username'];
   $user_id = $user['user_id'];
 
-  if(isset($_GET['file'])){
+  if (isset($_GET['file'])) {
     $import = $_GET['file'];
     $ifile = fopen("../../uploads/$import", "r");
     $text = fread($ifile, 999999);

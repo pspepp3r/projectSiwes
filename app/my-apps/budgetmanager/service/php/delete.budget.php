@@ -11,7 +11,7 @@ if (isset($_SESSION["user_id"])) {
 
   if (isset($_GET['file'])) {
     $file = $_GET['file'];
-    rename("../../uploads/$file", "../../bin/$file");
+    unlink("../../uploads/$file");
 
     $query_delete_budget = "DELETE FROM budgets WHERE `bud_file` = ?";
     $do_delete_budget = $pdo->prepare($query_delete_budget);

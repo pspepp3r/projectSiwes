@@ -47,7 +47,7 @@ function saveExpense() {
         } else {
             remark.style.display = "block"
             remark.style.color = "red";
-            remark.innerHTML = "Alert, recomended cost limit exceeded&excl;";
+            remark.innerHTML = "Alert, recommended cost limit exceeded&excl;";
         }
     }
 }
