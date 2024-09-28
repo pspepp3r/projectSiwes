@@ -46,12 +46,12 @@ require_once '../../apps.header.php';
                 $pattern = "#$username#";
 
                 foreach ($scan as $key) {
-                    if ($key == "." || $key == "..") {
+                    if (is_dir($key)) {
                         continue;
                     }
 
                     if (preg_match($pattern, $key)) {
-                        array_push($valid_file, $key);
+                        $valid_file[] = $key;
                     }
                 }
 
